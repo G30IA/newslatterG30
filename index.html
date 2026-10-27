@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G30 NA VEIA | Playbook CS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            500: '#f97316', // Laranja Principal G30 (Growth)
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            900: '#7c2d12',
+                        },
+                        dark: '#09090b', // Preto Profundo
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { 
+            -webkit-font-smoothing: antialiased; 
+            -moz-osx-font-smoothing: grayscale; 
+            background-color: #e4e4e7;
+        }
+        ::selection { background: #f97316; color: white; }
+        
+        .cite-tag { 
+            font-size: 0.75rem; 
+            vertical-align: super; 
+            color: #f97316; 
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: #27272a;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .cite-tag:hover { background: #f97316; color: white; }
+        .cite-tag::after { content: '*'; }
+        
+        /* Divisor estilo revista Brutalista */
+        .mag-divider {
+            height: 6px;
+            background: repeating-linear-gradient(
+                45deg,
+                #f97316,
+                #f97316 10px,
+                #09090b 10px,
+                #09090b 20px
+            );
+        }
+    </style>
+</head>
+<body class="text-gray-800 font-sans leading-relaxed selection:bg-brand-500 selection:text-white">
+
+    <!-- Topbar / Logo -->
+    <nav class="bg-dark text-white py-4 px-6 sticky top-0 z-50 shadow-2xl border-b-4 border-brand-500">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="bg-brand-500 text-dark font-black italic px-3 py-1 text-sm tracking-widest uppercase transform -skew-x-12 shadow-[2px_2px_0px_#fff]">G30 NA VEIA</span>
+                <span class="text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-widest hidden sm:inline border-l border-gray-700 pl-3">Aceleração & Retenção</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-bold uppercase tracking-wider">
+                <span class="text-brand-500 bg-brand-500/10 px-2 py-1 rounded">Edição #01</span>
+                <span class="text-gray-400 border-l border-gray-700 pl-4">Playbook 2026</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <main class="max-w-4xl mx-auto bg-white shadow-2xl min-h-screen my-0 sm:my-8 sm:border-2 sm:border-dark">
+        
+        <!-- Hero Section -->
+        <header class="relative px-6 py-16 sm:px-16 sm:py-24 bg-dark overflow-hidden border-b-8 border-brand-500">
+            <!-- Grid Background -->
+            <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(#f97316 1px, transparent 1px), linear-gradient(90deg, #f97316 1px, transparent 1px); background-size: 40px 40px;"></div>
+            
+            <!-- Efeito Glow -->
+            <div class="absolute top-0 right-0 w-96 h-96 bg-brand-500 rounded-full mix-blend-screen filter blur-[120px] opacity-30"></div>
+            
+            <div class="relative z-10">
+                <div class="inline-block bg-brand-500 text-dark font-black px-3 py-1 text-xs tracking-widest uppercase mb-6 shadow-[2px_2px_0px_#fff] transform -rotate-1">/// EXCLUSIVO G30</div>
+                <h1 class="text-4xl sm:text-7xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase">
+                    Playbook Estratégico de <span class="text-brand-500 block mt-2">Customer Success</span>
+                </h1>
+                <p class="text-xl sm:text-2xl font-bold text-gray-300 border-l-4 border-brand-500 pl-5 max-w-2xl">
+                    A arquitetura definitiva de gestão, rotinas operacionais e orquestração do ciclo de vida aplicada ao Ecossistema G30.
+                </p>
+            </div>
+        </header>
+
+        <!-- Conteúdo do Artigo -->
+        <article class="px-6 py-12 sm:px-16 sm:py-16">
+
+            <!-- INTRODUÇÃO -->
+            <section class="mb-16">
+                <p class="text-xl text-dark mb-6 leading-relaxed font-bold">
+                    O mercado global de Software e Serviços (SaaS) atravessa uma fase de amadurecimento acelerado, onde o crescimento a qualquer custo foi substituído pela imperativa necessidade de eficiência de capital e retenção de base. Dentro do nosso universo — o <strong class="bg-dark text-brand-500 px-1 uppercase tracking-tight">Ecossistema G30</strong> —, que abrange desde a Inteligência Automotiva até a Educação Corporativa, a disciplina de Customer Success evoluiu de uma função tática de suporte para o motor central da nossa estratégia de receita recorrente <span class="cite-tag"></span>. No cenário corporativo do Brasil, essa dinâmica intensificou a competição pela retenção de clientes em níveis sem precedentes <span class="cite-tag"></span>. A sobrevivência e o aumento do valuation das companhias dependem da capacidade de orquestrar ativamente o valor entregue, pavimentando o caminho para a expansão.
+                </p>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Para operacionalizar essa estratégia e garantir que os nossos parceiros apliquem rigorosamente o <strong class="text-brand-600">Método G30</strong> em sua totalidade, o desenvolvimento deste Playbook de Customer Success assume o papel de documento fundamental da organização. Muito além de um simples manual, o playbook atua como um sistema vivo e escalável, traduzindo o conhecimento tribal de profissionais de alto desempenho em processos sistêmicos institucionais. O objetivo é garantir que a utilização dos nossos produtos — das plataformas de inteligência às trilhas de formação automotiva — não se baseie na intuição do cliente, mas em dados preditivos guiados pela nossa equipe <span class="cite-tag"></span>. A ausência desta estrutura acarreta na fragmentação do atendimento, flutuações severas na satisfação do cliente e na perda de visibilidade gerencial sobre indicadores primordiais como o NRR e o GRR <span class="cite-tag"></span>.
+                </p>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed bg-brand-50 p-6 border-l-4 border-brand-500 font-medium text-brand-900 shadow-sm">
+                    Desenvolver um material de excelência exige, portanto, a definição clara das competências do profissional CSM, o dimensionamento cirúrgico de suas rotinas de coleta de dados, a formulação de indicadores de saúde e o estabelecimento de ritos executivos. Este relatório visa estabelecer o padrão ouro G30 para a construção desta arquitetura operacional.
+                </p>
+            </section>
+
+            <div class="mag-divider mb-16"></div>
+
+            <!-- SEÇÃO 1: O CSM -->
+            <section class="mb-16">
+                <span class="text-brand-500 font-bold uppercase tracking-widest text-xs mb-2 block">01. O Profissional</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-dark mb-8 uppercase tracking-tight">A Anatomia Profissional do Gerente de Customer Success (CSM)</h2>
+                
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                    O Gerente de Customer Success (CSM) opera como o maestro da relação comercial pós-venda, atuando na intersecção entre as necessidades de negócios do cliente e as capacidades das nossas ferramentas. A sua responsabilidade é bifocal: internamente, o profissional realiza análises de dados, coordena recursos entre os departamentos de Produto, Vendas e Suporte; externamente, engaja-se com o cliente para guiar a adoção do ecossistema G30, mitigar fricções e orquestrar a percepção contínua de valor <span class="cite-tag"></span>. O sucesso nesta posição provém de um arsenal rigoroso de competências cognitivas e técnicas <span class="cite-tag"></span>.
+                </p>
+
+                <!-- Box Hard & Soft Skills -->
+                <div class="bg-dark text-white p-6 sm:p-8 rounded-lg mb-8 shadow-[6px_6px_0px_#f97316] border-l-8 border-brand-500 relative">
+                    <div class="absolute -top-4 -right-4 bg-brand-500 text-dark font-black px-4 py-2 transform rotate-6 border-2 border-dark">SKILLS</div>
+                    <h3 class="text-2xl font-black text-white mb-4 uppercase">Competências Técnicas e Comportamentais <br><span class="text-brand-500 text-lg">(Hard e Soft Skills)</span></h3>
+                    <p class="text-base text-gray-300 mb-4 leading-relaxed">
+                        A complexidade das nossas operações exige que o CSM seja um profissional híbrido. No domínio técnico (Hard Skills), a proficiência absoluta nos produtos e metodologia G30 é o pré-requisito elementar. O mercado espera que o CSM reduza drasticamente o tempo necessário para que o cliente obtenha o seu primeiro resultado de impacto, métrica conhecida como Time to First Value (TTFV) <span class="cite-tag"></span>.
+                    </p>
+                    <p class="text-base text-gray-300 mb-4 leading-relaxed">
+                        Em complemento, a capacidade de análise de dados torna-se a competência de maior distinção. A jornada contemporânea é escrita em padrões de telemetria e coleta de dados de performance, cabendo ao CSM decifrar esses sinais e convertê-los em planos de ação gerenciais. O repertório exige, ainda, perspicácia de negócios (Business Acumen), permitindo que o profissional debata retorno sobre investimento (ROI) em nível de igualdade com diretores <span class="cite-tag"></span>.
+                    </p>
+                    <div class="bg-brand-500/10 border border-brand-500/30 p-4 mt-4">
+                        <p class="text-base text-brand-100 leading-relaxed font-bold">
+                            Simultaneamente, as competências comportamentais (Soft Skills) funcionam como o tecido conectivo. A comunicação de excelência permite ao CSM modular o seu discurso. Adiciona-se a isso a necessidade crítica de liderança por influência e gestão de mudanças; como o CSM raramente possui autoridade hierárquica, ele deve empregar técnicas avançadas de persuasão para motivar a adoção de novos comportamentos operacionais no cliente <span class="cite-tag"></span>.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-black text-dark mt-10 mb-4 uppercase">A Trilha de Carreira e o Desenvolvimento Organizacional</h3>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    A arquitetura de carreira padrão pode ser observada sob a ótica de evolução de responsabilidades gerenciais. O estágio inicial concentra-se na execução tática e na aderência a playbooks restritos, focando intensamente nas rotinas de ativação e onboarding <span class="cite-tag"></span>. Conforme o profissional amadurece para a senioridade intermediária, sua autonomia para orquestrar o ciclo de vida e a metodologia completa amplia-se, conduzindo as revisões e chamadas mensais com autonomia analítica <span class="cite-tag"></span>.
+                </p>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Ao atingir a senioridade máxima (Enterprise/Estratégico), o escopo altera-se para a navegação política entre múltiplos stakeholders, elaboração de planos avançados de mitigação de risco e orquestração de cross-sells massivos entre Inteligência e Educação. O ápice desta estrutura encontra-se nas posições de liderança, cujo mandato exclusivo é o atingimento das metas globais de retenção de receita da G30 <span class="cite-tag"></span>.
+                </p>
+            </section>
+
+            <!-- SEÇÃO 2: OPERAÇÃO -->
+            <section class="mb-16">
+                <span class="text-brand-500 font-bold uppercase tracking-widest text-xs mb-2 block">02. Operação & Escala</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-dark mb-6 uppercase tracking-tight">Engenharia de Capacidade e a Gestão de Rotinas</h2>
+                
+                <p class="text-lg text-gray-800 mb-8 leading-relaxed font-medium">
+                    O principal fator de falha não reside na falta de vontade corporativa, mas no colapso da engenharia de capacidade produtiva. Dimensionar adequadamente o número de clientes na carteira de um CSM determina a diferença entre uma estratégia de retenção preditiva e uma operação de contenção de danos.
+                </p>
+
+                <h3 class="text-2xl font-black text-dark mt-10 mb-4 uppercase">A Falsa Economia do Excesso de Contas</h3>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    O planejamento de capacidade transcende a simples divisão aritmética. A alocação deve considerar as horas estimadas de processos críticos, como as ligações semanais de acompanhamento e as sessões de onboarding <span class="cite-tag"></span>. Com a busca por eficiência, o mercado brasileiro observou a média de contas por CSM saltar de 87 (2023) para cerca de 124 (2025) <span class="cite-tag"></span>.
+                </p>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                    Este inchaço produz consequências nefastas. O atendimento proativo cessa, o acompanhamento do Método G30 é abandonado, e o CSM é forçado a assumir um papel de bombeiro organizacional, reagindo apenas a reclamações <span class="cite-tag"></span>. Esforços de comunicação massificada tendem a gerar rejeição pela ausência de empatia contextual <span class="cite-tag"></span>. Para modelos de vendas complexas, a recomendação inegociável é a manutenção de uma carteira enxuta (10 a 30 contas corporativas de alto ticket por profissional) <span class="cite-tag"></span>.
+                </p>
+
+                <h3 class="text-2xl font-black text-dark mt-10 mb-4 uppercase">Matriz de Execução G30: O Cotidiano de Alta Performance</h3>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                    Para mitigar a entropia, o CSM deve ancorar sua execução em rituais inquebráveis. A estruturação destas rotinas garante a aplicação da metodologia e a coleta contínua de performance:
+                </p>
+
+                <!-- Tabela 1: Rotinas (Brutalist) -->
+                <div class="overflow-x-auto my-8 border-4 border-dark shadow-[6px_6px_0px_#18181b]">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-brand-500 text-dark border-b-4 border-dark">
+                            <tr>
+                                <th class="text-left py-4 px-6 font-black uppercase tracking-wider w-1/4">Frequência</th>
+                                <th class="text-left py-4 px-6 font-black uppercase tracking-wider w-3/4 border-l-4 border-dark">Entregas e Ritos Exigidos</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y-4 divide-dark text-gray-800 text-base">
+                            <tr class="hover:bg-brand-50 transition-colors">
+                                <td class="py-4 px-6 font-black text-dark align-top uppercase">Diária</td>
+                                <td class="py-4 px-6 align-top font-medium border-l-4 border-dark">Auditoria de alertas sistêmicos de saúde. Triagem de chamados críticos de suporte. Tratativa de objeções e respostas detratoras. Manutenção de comunicação regular e envio proativo de recursos úteis <span class="cite-tag"></span>.</td>
+                            </tr>
+                            <tr class="hover:bg-brand-50 transition-colors">
+                                <td class="py-4 px-6 font-black text-brand-600 align-top uppercase">Semanal</td>
+                                <td class="py-4 px-6 align-top font-medium border-l-4 border-dark">Realização de <strong>ligações semanais</strong> para acompanhar rigorosamente a aplicação do método G30 no cliente. Execução de reuniões de passagem de bastão (Handoff) com a equipe de Vendas. Identificação precoce de desafios operacionais <span class="cite-tag"></span>.</td>
+                            </tr>
+                            <tr class="hover:bg-brand-50 transition-colors">
+                                <td class="py-4 px-6 font-black text-dark align-top uppercase">Mensal</td>
+                                <td class="py-4 px-6 align-top font-medium border-l-4 border-dark">Condução de <strong>vídeo chamadas mensais</strong> para coleta aprofundada de dados de performance e direcionamento dos próximos passos. Identificação de oportunidades de Upsell e Cross-sell (ex: cruzar base de Inteligência com Educação) <span class="cite-tag"></span>.</td>
+                            </tr>
+                            <tr class="hover:bg-brand-50 transition-colors">
+                                <td class="py-4 px-6 font-black text-brand-600 align-top uppercase">Trimestral</td>
+                                <td class="py-4 px-6 align-top font-medium border-l-4 border-dark">Estruturação e condução das Executive Business Reviews (EBRs). Repactuação formal dos Planos de Sucesso. Início antecipado do processo de mitigação de churn para contratos prestes a vencer <span class="cite-tag"></span>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 3: PLAYBOOKS -->
+            <section class="mb-16">
+                <span class="text-brand-500 font-bold uppercase tracking-widest text-xs mb-2 block">03. Orquestração Tática</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-dark mb-8 uppercase tracking-tight">A Arquitetura dos Playbooks do Ciclo de Vida</h2>
+                
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Os playbooks representam os motores que transformam a intenção da diretoria em uma experiência palpável para o cliente. Diferentemente de roteiros estáticos, um playbook de Sucesso do Cliente é uma estrutura tática que dita a resposta comportamental e operacional da companhia frente a eventos fundamentais na vida da conta <span class="cite-tag"></span>.
+                </p>
+                <p class="text-lg text-gray-700 mb-10 leading-relaxed font-bold border-l-4 border-brand-500 pl-4 py-2 bg-gray-100">
+                    A estrutura exige a definição de gatilhos (ex: assinatura do contrato), clareza de papéis (handoffs), fluxos de trabalho detalhados e critérios de conclusão mensuráveis, essenciais para evitar que processos de implementação do G30 se estendam indefinidamente.
+                </p>
+                
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Playbook 1 -->
+                    <div class="border-4 border-dark p-6 bg-white hover:-translate-y-1 transition-transform shadow-[4px_4px_0px_#18181b]">
+                        <h3 class="text-2xl font-black text-dark uppercase mb-3"><span class="text-brand-500">#1</span> Onboarding Orquestrado</h3>
+                        <p class="text-base text-gray-700 leading-relaxed font-medium">
+                            O ingresso do cliente dita a tônica de toda a sua jornada financeira. Inicia-se com a reunião de Handoff interno, transferindo motivações de compra. Segue-se o Kickoff com patrocinadores, selando o Plano de Sucesso Mútuo. O onboarding apenas é concluído quando a telemetria comprova a primeira utilização independente e o cliente relata a percepção primária de ganho real (Time to First Value) com os produtos G30 <span class="cite-tag"></span>.
+                        </p>
+                    </div>
+
+                    <!-- Playbook 2 -->
+                    <div class="border-4 border-dark p-6 bg-white hover:-translate-y-1 transition-transform shadow-[4px_4px_0px_#18181b]">
+                        <h3 class="text-2xl font-black text-dark uppercase mb-3"><span class="text-brand-500">#2</span> Adoção & Monitoramento</h3>
+                        <p class="text-base text-gray-700 leading-relaxed font-medium">
+                            A estagnação acende alertas imediatos. O gatilho ativa-se quando o uso recua em relação à média ou funcionalidades avançadas são ignoradas. O CSM investiga a raiz do distanciamento (falta de capacitação ou mudança de quadro), desenha ações focalizadas de reintegração da metodologia à rotina e executa medições pontuais (NPS/CSAT) <span class="cite-tag"></span>.
+                        </p>
+                    </div>
+
+                    <!-- Playbook 3 -->
+                    <div class="border-4 border-dark p-6 bg-white hover:-translate-y-1 transition-transform shadow-[4px_4px_0px_#18181b]">
+                        <h3 class="text-2xl font-black text-dark uppercase mb-3"><span class="text-brand-500">#3</span> Prevenção de Risco (Churn)</h3>
+                        <p class="text-base text-gray-700 leading-relaxed font-medium">
+                            O cancelamento não é surpresa; é precedido pelo declínio de índices. Acionado frente à queda do Health Score ou silêncio prolongado. Exige um escrutínio do histórico, agendamento mandatário de diálogo de restauração e documentação de um Plano de Recuperação assinado pelos diretores, visando estancar o sangramento <span class="cite-tag"></span>.
+                        </p>
+                    </div>
+
+                    <!-- Playbook 4 -->
+                    <div class="border-4 border-brand-500 p-6 bg-dark hover:-translate-y-1 transition-transform shadow-[4px_4px_0px_#f97316]">
+                        <h3 class="text-2xl font-black text-white uppercase mb-3"><span class="text-brand-500">#4</span> Expansão Recorrente (Upsell)</h3>
+                        <p class="text-base text-gray-300 leading-relaxed font-medium">
+                            A expansão é consequência matemática da orquestração de valor. Engatilhado 120 dias antes da renovação. O CSM analisa a curva de adoção histórica e o nível de sucesso atingido. Gatilhos envolvem uso ostensivo e adesão plena ao método G30, promovendo cross-sells lógicos (ex: o cliente que comprou software agora necessita dos módulos de Educação) de forma fluída <span class="cite-tag"></span>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mag-divider mb-16"></div>
+
+            <!-- SEÇÃO 4: HEALTH SCORE -->
+            <section class="mb-16">
+                <span class="text-brand-500 font-bold uppercase tracking-widest text-xs mb-2 block">04. Data Analytics</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-dark mb-8 uppercase tracking-tight">Customer Health Score: A Fórmula da Previsibilidade</h2>
+                
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Para instaurar uma cultura guiada por fatos, adotamos o Customer Health Score (CHS). Um algoritmo preditivo delineado para sintetizar dezenas de sinais, atribuindo um grau probabilístico da saúde da conta <span class="cite-tag"></span>. Estudos acusam que CHS refinados em ferramentas de telemetria avisam sobre o colapso contratual impressionantes 63 dias antes que ele aconteça formalmente <span class="cite-tag"></span>.
+                </p>
+
+                <!-- Tabela 2: Health Score (Brutalist) -->
+                <div class="overflow-x-auto my-8 border-4 border-dark shadow-[6px_6px_0px_#18181b]">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-dark text-white border-b-4 border-brand-500">
+                            <tr>
+                                <th class="text-left py-4 px-6 font-black uppercase tracking-wider w-1/4">Categoria CHS</th>
+                                <th class="text-left py-4 px-6 font-black uppercase tracking-wider w-1/2 border-l-4 border-dark">Componentes de Avaliação</th>
+                                <th class="text-center py-4 px-6 font-black uppercase tracking-wider w-1/4 border-l-4 border-dark">Peso</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y-4 divide-dark text-gray-800 text-base">
+                            <tr class="hover:bg-brand-50 transition-colors">
+                                <td class="py-4 px-6 font-black text-dark align-middle uppercase">Uso do Produto G30</td>
+                                <td class="py-4 px-6 align-top font-medium border-l-4 border-dark">Taxa diária/semanal de atividade; adoção verticalizada do método; abandono da plataforma <span class="cite-tag"></span>.</td>
+                                <td class="py-4 px-6 font-black text-brand-600 align-middle text-center text-3xl border-l-4 border-dark">35%</td>
+                            </tr>
+                            <tr class="hover:bg-brand-50 transition-colors">
+                                <td class="py-4 px-6 font-black text-dark align-middle uppercase">Engajamento</td>
+                                <td class="py-4 px-6 align-top font-medium border-l-4 border-dark">Presença nas vídeo chamadas mensais, sentimento e taxa responsiva a e-mails e ligações semanais <span class="cite-tag"></span>.</td>
+                                <td class="py-4 px-6 font-black text-brand-600 align-middle text-center text-3xl border-l-4 border-dark">25%</td>
+                            </tr>
+                            <tr class="hover:bg-brand-50 transition-colors">
+                                <td class="py-4 px-6 font-black text-dark align-middle uppercase">Financeiro</td>
+                                <td class="py-4 px-6 align-top font-medium border-l-4 border-dark">Liquidação de mensalidades; proximidade de vigência; picos de tickets repassados ao suporte <span class="cite-tag"></span>.</td>
+                                <td class="py-4 px-6 font-black text-brand-600 align-middle text-center text-3xl border-l-4 border-dark">20%</td>
+                            </tr>
+                            <tr class="hover:bg-brand-50 transition-colors">
+                                <td class="py-4 px-6 font-black text-dark align-middle uppercase">Satisfação Qualitativa</td>
+                                <td class="py-4 px-6 align-top font-medium border-l-4 border-dark">Índices apurados pelas avaliações do CSAT e NPS durante as interações de rotina <span class="cite-tag"></span>.</td>
+                                <td class="py-4 px-6 font-black text-brand-600 align-middle text-center text-3xl border-l-4 border-dark">15%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    O cálculo gera segmentação imediata por cores: <strong class="text-green-600">Verde (75-100)</strong> para base apta a expansão; <strong class="text-yellow-600">Amarelo (50-74)</strong> exigindo atenção cautelar; e <strong class="text-red-600">Vermelho (0-49)</strong> demandando intervenção executiva mandatária em até sete dias <span class="cite-tag"></span>. Ignorar sinais atrasados ou compor notas desvinculadas dos playbooks condena a ferramenta à obsolescência <span class="cite-tag"></span>.
+                </p>
+            </section>
+
+            <!-- SEÇÃO 5: RITUAIS (EBR) -->
+            <section class="mb-16 bg-dark text-white p-8 sm:p-12 shadow-[8px_8px_0px_#f97316]">
+                <span class="text-brand-500 font-bold uppercase tracking-widest text-xs mb-2 block">05. Rituais</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-tight">A Governança do Sucesso: Executive Business Reviews (EBR)</h2>
+                
+                <p class="text-lg text-gray-300 mb-6 leading-relaxed font-medium">
+                    A arquitetura de retenção depende do espaço forjado nas mesas diretivas dos clientes. A Executive Business Review (EBR) configura o espaço soberano desta legitimação, conduzido periodicamente <span class="cite-tag"></span>.
+                </p>
+                <p class="text-lg text-gray-300 mb-10 leading-relaxed font-bold border-l-4 border-brand-500 pl-4">
+                    Estas revisões repulsam análises micro-gerenciais de suporte. São esferas concebidas para traduzir o atingimento das metas do método G30 em balanço patrimonial e ROI perante os patrocinadores.
+                </p>
+
+                <h3 class="text-xl font-black text-brand-500 mb-6 uppercase">O Roteiro Definitivo para a Condução</h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-900 border border-gray-700 p-6">
+                        <h4 class="font-black text-lg text-white mb-2 uppercase text-brand-500">1. Pactuação Temporal</h4>
+                        <p class="text-sm text-gray-400 font-medium">Delimitam-se assertivamente os marcos de longo prazo que a aliança G30 e o cliente buscam consumar no trimestre <span class="cite-tag"></span>.</p>
+                    </div>
+                    <div class="bg-gray-900 border border-gray-700 p-6">
+                        <h4 class="font-black text-lg text-white mb-2 uppercase text-brand-500">2. Retrovisor Operacional</h4>
+                        <p class="text-sm text-gray-400 font-medium">O CSM submete as estatísticas de telemetria coletadas mensalmente, sedimentando os ganhos alcançados mediante prova matemática <span class="cite-tag"></span>.</p>
+                    </div>
+                    <div class="bg-gray-900 border border-gray-700 p-6">
+                        <h4 class="font-black text-lg text-white mb-2 uppercase text-brand-500">3. Consultoria Pró-Ativa</h4>
+                        <p class="text-sm text-gray-400 font-medium">Abordagem de ideias emergentes do mercado, introduzindo novas vertentes dos produtos G30 para fomentar melhorias operacionais sistêmicas <span class="cite-tag"></span>.</p>
+                    </div>
+                    <div class="bg-gray-900 border border-gray-700 p-6">
+                        <h4 class="font-black text-lg text-white mb-2 uppercase text-brand-500">4. Descentralização</h4>
+                        <p class="text-sm text-gray-400 font-medium">Traçam-se os pilares irredutíveis para os próximos 90 dias, atribuindo responsabilidades nominais entre o time G30 e a diretoria do cliente <span class="cite-tag"></span>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 6: KPIs -->
+            <section class="mb-16">
+                <span class="text-brand-500 font-bold uppercase tracking-widest text-xs mb-2 block">06. Valor de Mercado</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-dark mb-8 uppercase tracking-tight">Arquitetura Financeira: Os KPIs do Domínio do CSM</h2>
+                
+                <p class="text-lg text-gray-700 mb-10 leading-relaxed font-medium">
+                    Em sua consolidação máxima, a equipe de CS é auditada pelas molas financeiras que garantem o valuation dos ativos. Toda tática desenvolvida reverbera sob dois eixos <span class="cite-tag"></span>:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                    <div class="border-4 border-dark bg-white p-8 shadow-[6px_6px_0px_#18181b]">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-3xl font-black text-dark uppercase">GRR</h3>
+                            <span class="bg-dark text-white px-3 py-1 font-bold text-xs uppercase tracking-widest">Taxa Bruta</span>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-6 font-medium leading-relaxed h-32">
+                            Captura o percentual fiel das receitas correntes preservadas. Isola a análise para focar cruamente nas habilidades primárias empregadas na paralisação dos cortes (churn), sem contar novas vendas <span class="cite-tag"></span>.
+                        </p>
+                        <div class="border-t-4 border-brand-500 pt-4">
+                            <span class="block text-xs uppercase font-black text-gray-500 tracking-widest mb-1">Target Ideal</span>
+                            <span class="text-4xl font-black text-dark">> 90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="border-4 border-brand-500 bg-dark p-8 shadow-[6px_6px_0px_#f97316]">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-3xl font-black text-white uppercase">NRR</h3>
+                            <span class="bg-brand-500 text-dark px-3 py-1 font-bold text-xs uppercase tracking-widest">Taxa Líquida</span>
+                        </div>
+                        <p class="text-sm text-gray-300 mb-6 font-medium leading-relaxed h-32">
+                            Medição abrangente da resiliência combinada à hiper-expansão. Agrupa ao portfólio remanescente a lucratividade auferida por upsells (vender mais licenças) e cross-sells (vender outros braços G30) <span class="cite-tag"></span>.
+                        </p>
+                        <div class="border-t-4 border-brand-500 pt-4">
+                            <span class="block text-xs uppercase font-black text-brand-500 tracking-widest mb-1">Target Ideal</span>
+                            <span class="text-4xl font-black text-white">> 110%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 7: IA (Climax) -->
+            <section class="mt-20 bg-brand-500 text-dark -mx-6 sm:-mx-16 px-6 sm:px-16 py-16 border-t-8 border-dark shadow-[0px_-20px_40px_rgba(249,115,22,0.3)]">
+                <span class="text-dark font-black uppercase tracking-widest text-xs mb-2 block bg-white px-2 py-1 inline-block">07. Fronteira Digital</span>
+                <h2 class="text-4xl sm:text-6xl font-black mb-10 uppercase tracking-tighter leading-[1] mt-4">Tecnologia e o Uso da Inteligência Artificial</h2>
+                
+                <p class="text-lg text-brand-900 mb-8 leading-relaxed font-bold">
+                    Sustentar esta teia arquitetônica de fluxos e prever cenários perante múltiplas contas corporativas tornou-se uma equação resolúvel somente via tecnologia. As plataformas consolidadas do segmento — englobando a hegemonia do Gainsight, Totango e SenseData — atuam fundindo pipelines e relatórios em uma Visão 360 Graus do Cliente <span class="cite-tag bg-dark text-brand-500"></span>.
+                </p>
+                <div class="bg-dark text-white p-8 border-4 border-dark shadow-[8px_8px_0px_#fff]">
+                    <p class="text-lg leading-relaxed font-medium">
+                        Na vanguarda do ciclo compreendido até 2026, a Inclusão de Inteligência Artificial abarcou por completo o coração do Customer Success. O aporte analítico da IA diagnostica desfiliações com 85% de precisão cruzando variações brandas do Health Score <span class="cite-tag bg-brand-500 text-dark"></span>. 
+                        <br><br>
+                        O uso de formatações textuais geradas na leitura apurada das telemetrias vocais das ligações semanais (via MeetGeek) e plataformas que confeccionam autonomamente apresentações de EBR, permitem que o estrategista CSM moderno invista todo o seu recurso neural valioso no restabelecimento negocial complexo e na governança interpessoal, materializando o valor supremo do <span class="text-brand-500 font-black">Ecossistema G30</span> na base <span class="cite-tag bg-brand-500 text-dark"></span>.
+                    </p>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Footer da Newsletter (Call to Action) -->
+    <footer class="bg-dark text-center py-16 px-6 border-t-8 border-brand-500">
+        <div class="max-w-xl mx-auto">
+            <h4 class="text-brand-500 font-black text-3xl sm:text-5xl uppercase mb-4 tracking-tighter transform -skew-x-6">Mantenha a Barra Alta.</h4>
+            <p class="text-gray-300 font-medium mb-8 text-lg">Insira a disciplina G30 na sua rotina. Assine para receber playbooks e métodos diretos ao ponto.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <input type="email" placeholder="seu.melhor@email.com" class="px-5 py-4 bg-gray-900 border-4 border-brand-500 text-white font-bold placeholder-gray-600 focus:outline-none focus:bg-dark w-full sm:w-80 transition-colors">
+                <button class="bg-brand-500 text-dark font-black uppercase px-8 py-4 transition-transform hover:-translate-y-1 shadow-[4px_4px_0px_#fff] w-full sm:w-auto text-lg active:translate-y-[4px] active:shadow-[0px_0px_0px_#fff]">
+                    Assinar Agora
+                </button>
+            </div>
+            
+            <div class="mag-divider mb-8 w-32 mx-auto"></div>
+            <p class="text-xs text-gray-500 font-black tracking-widest uppercase">&copy; 2026 G30 EDUCAÇÃO AUTOMOTIVA | Ecosystem</p>
+        </div>
+    </footer>
+
+</body>
+</html>
